@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Fira_Mono, Geist_Mono, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const firaMono = Fira_Mono({
+  variable: "--font-fira-mono",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -37,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${departureMono.variable} antialiased p-6 md:p-0 md:py-6`}
+        className={`${firaMono.variable} ${geistMono.variable} ${inter.variable} ${departureMono.variable} antialiased p-6 md:p-0 md:py-6 absolute inset-0`}
       >
         {children}
       </body>
