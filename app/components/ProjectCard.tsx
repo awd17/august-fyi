@@ -19,12 +19,13 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="flex flex-col space-y-4 bg-neutral-950 border-2 border-neutral-900 p-4 rounded-lg">
-      <div className="flex w-full bg-neutral-900 aspect-video rounded-lg overflow-hidden">
+      <div className="relative flex w-full bg-neutral-900 aspect-video rounded-lg overflow-hidden">
         <Image
           src={imageUrl}
           alt={`${title} project screenshot`}
-          width={600}
-          height={400}
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          quality={95}
           className="w-full h-full object-cover"
         />
       </div>

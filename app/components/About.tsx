@@ -8,7 +8,7 @@ export function About() {
         </p>
         <p className="mb-3">
           I'm a <span className="whitespace-nowrap">student 👨‍🎓</span> based in
-          Los Angeles,<span className="whitespace-nowrap"> CA 📍</span>
+          San Diego,<span className="whitespace-nowrap"> CA 📍</span>
         </p>
         <p>
           {" "}
