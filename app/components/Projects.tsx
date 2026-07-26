@@ -3,20 +3,20 @@ import { ProjectCard } from "./ProjectCard";
 // Mock data for projects
 const projects = [
   {
+    title: "Local Cut",
+    description:
+      "Local-first browser video editor. Import, trim, split, and arrange clips — all processing stays on your device.",
+    githubUrl: "https://github.com/awd17/local-video-editor",
+    projectUrl: "https://local-cut.vercel.app/",
+    imageUrl: "/LocalCutScreenshot.webp",
+  },
+  {
     title: "Poly Research",
     description:
       "Deep analysis agent for Polymarket markets with odds estimation and edge-focused reports.",
     githubUrl: "https://github.com/awd17/polyresearch",
     projectUrl: "https://polyresearch.vercel.app/",
     imageUrl: "/PolyResearchScreenshot.png",
-  },
-  {
-    title: "Portfolio Website",
-    description: "Personal portfolio built with Next.js and Tailwind CSS",
-    githubUrl: "https://github.com/awd17/august-fyi",
-    projectUrl: "https://august.fyi",
-    imageUrl:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&crop=top",
   },
 ];
 
