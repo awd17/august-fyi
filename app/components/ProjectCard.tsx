@@ -8,6 +8,7 @@ interface ProjectCardProps {
   githubUrl: string;
   projectUrl: string;
   imageUrl: string;
+  stack?: string;
 }
 
 export function ProjectCard({
@@ -16,6 +17,7 @@ export function ProjectCard({
   githubUrl,
   projectUrl,
   imageUrl,
+  stack,
 }: ProjectCardProps) {
   return (
     <div className="flex flex-col space-y-4 bg-neutral-950 border-2 border-neutral-900 p-4 rounded-lg">
@@ -34,6 +36,11 @@ export function ProjectCard({
         <p className="text-sm font-geist-mono text-neutral-500">
           {description}
         </p>
+        {stack && (
+          <p className="text-xs font-geist-mono text-neutral-600 mt-1">
+            {stack}
+          </p>
+        )}
         <div className="flex flex-row space-x-2 mt-4">
           <Link target="_blank" href={githubUrl} className="w-full">
             <Button className="flex items-center justify-center w-full bg-neutral-900 p-2 rounded-lg transition-colors duration-200 hover:[filter:brightness(1.15)] cursor-pointer border border-neutral-800 shadow-[inset_2px_2px_8px_0_rgba(255,255,255,0.08),inset_-2px_-2px_8px_0_rgba(0,0,0,0.25)] space-x-2">
