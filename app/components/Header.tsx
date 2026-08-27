@@ -5,7 +5,7 @@ export function Header() {
     <nav className="flex items-center justify-between w-full max-w-3xl m-auto">
       <Link href="/">
         <h1 className="text-2xl font-fira-mono">
-          august<span className="text-neutral-500/50 text-xl">.fyi</span>
+          august<span className="text-neutral-500/50 text-xl">.st</span>
         </h1>
       </Link>
       <ul className="flex space-x-4 font-geist-mono font-semibold">
