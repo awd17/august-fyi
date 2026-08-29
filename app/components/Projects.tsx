@@ -1,7 +1,13 @@
 import { ProjectCard } from "./ProjectCard";
 
-// Mock data for projects
 const projects = [
+  {
+    title: "Reel Return",
+    description:
+      "Theatrical industry dashboard tracking domestic box office, distributor concentration, and release outlook.",
+    projectUrl: "https://theater-industry-dashboard.augdrak17.workers.dev/",
+    imageUrl: "/ReelReturnScreenshot.webp",
+  },
   {
     title: "Timbre",
     description:
